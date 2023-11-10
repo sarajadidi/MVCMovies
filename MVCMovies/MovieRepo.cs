@@ -23,6 +23,12 @@ namespace MVCMovies
 		{
 			return _conn.QuerySingle<Movie>("SELECT * FROM MOVIE WHERE MOVIEID = @id", new { id = id });
 		}
+
+		public void UpdateMovie(Movie movie)
+		{
+			_conn.Execute("UPDATE movie SET Rating = @rating, RottenRating = @rottenrating WHERE MovieID = @id",
+				new { rating = movie.Rating, rottenrating = movie.RottenRating, id = movie.MovieID });
+		}
     }
 }
 
