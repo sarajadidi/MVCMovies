@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Movie>
+
+<h2>Movies</h2>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Lead Actor</th>
+        <th>Genre</th>
+        <th>Year</th>
+        <th>Rating</th>
+        <th>Rotten Tomatoes Rating</th>
+        <th>Description</th>
+    </tr>
+
+    @foreach (var movie in @Model)
+    {
+        <tr>
+            <td>@movie.MovieID</td>
+            <td>@movie.Name</td>
+            <td>@movie.LeadActor</td>
+            <td>@movie.Genre</td>
+            <td>@movie.Year</td>
+            <td>@movie.Rating</td>
+            <td>@movie.RottenRating</td>
+            <td>@movie.Description</td>
+        </tr>
+    }
+
+</table>
