@@ -23,6 +23,12 @@ namespace MVCMovies.Controllers
             var movie = _repo.GetAllMovies();
             return View(movie);
         }
+
+        public IActionResult ViewMovie(int id)
+        {
+            var movie = _repo.GetMovie(id);
+            return View(movie);
+        }
     }
 }
 

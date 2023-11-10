@@ -1,0 +1,26 @@
+﻿@model Movie
+
+<h3>@Model.Name Information</h3>
+
+<table class="table">
+    <tr>
+        <th>Movie ID</th>
+        <th>Name</th>
+        <th>Lead Actor</th>
+        <th>Genre</th>
+        <th>Year</th>
+        <th>Rating</th>
+        <th>Rotten Tomatoes Rating</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>@Model.MovieID</td>
+        <td>@Model.Name</td>
+        <td>@Model.LeadActor</td>
+        <td>@Model.Genre</td>
+        <td>@Model.Year</td>
+        <td>@Model.Rating</td>
+        <td>@Model.RottenRating</td>
+        <td>@Model.Description</td>
+    </tr>
+</table>

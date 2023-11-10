@@ -18,6 +18,11 @@ namespace MVCMovies
         {
 			return _conn.Query<Movie>("SELECT * From MOVIE");
         }
+
+		public Movie GetMovie(int id)
+		{
+			return _conn.QuerySingle<Movie>("SELECT * FROM MOVIE WHERE MOVIEID = @id", new { id = id });
+		}
     }
 }
 

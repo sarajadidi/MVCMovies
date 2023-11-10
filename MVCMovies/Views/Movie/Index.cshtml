@@ -16,7 +16,7 @@
     @foreach (var movie in @Model)
     {
         <tr>
-            <td>@movie.MovieID</td>
+            <td><a href=/Movie/ViewMovie/@movie.MovieID>@movie.MovieID</a></td>
             <td>@movie.Name</td>
             <td>@movie.LeadActor</td>
             <td>@movie.Genre</td>
