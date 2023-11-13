@@ -29,6 +29,17 @@ namespace MVCMovies
 			_conn.Execute("UPDATE movie SET Rating = @rating, RottenRating = @rottenrating WHERE MovieID = @id",
 				new { rating = movie.Rating, rottenrating = movie.RottenRating, id = movie.MovieID });
 		}
+
+		public void AddMovie(Movie movieToAdd)
+		{
+			_conn.Execute("INSERT INTO movie (NAME, LEADACTOR, GENRE, YEAR, RATING, ROTTENRATING, DESCRIPTION) VALUES (@name, @leadActor, @genre, @year, @rating, @rottenRating, @description)",
+				new { name = movieToAdd.Name, leadActor = movieToAdd.LeadActor, genre = movieToAdd.Genre, year = movieToAdd.Year, rating = movieToAdd.Rating, rottenRating = movieToAdd.RottenRating, description = movieToAdd.Description});
+		}
+
+		public void RemoveMovie(Movie movieToRemove)
+		{
+			_conn.Execute("DELETE FROM movie WHERE MovieId = @id", new { id = movieToRemove.MovieID });
+		}
     }
 }
 

@@ -46,6 +46,36 @@ namespace MVCMovies.Controllers
             _repo.UpdateMovie(movie);
             return RedirectToAction("ViewMovie", new { id = movie.MovieID });
         }
+
+        public IActionResult AddMovie(Movie movieToAdd)
+        {
+            if (movieToAdd == null)
+            {
+                return View("MovieNotFound");
+            }
+            return View(movieToAdd);
+        }
+
+        public IActionResult AddMovieToDatabase(Movie movie)
+        {
+            _repo.AddMovie(movie);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult DeleteMovie(Movie movie)
+        {
+            if (movie == null)
+            {
+                return View("MovieNotFound");
+            }
+            _repo.RemoveMovie(movie);
+            return RedirectToAction("Index");
+
+        }
+        public IActionResult Generator()
+        {
+            return View();
+        }
     }
 }
 

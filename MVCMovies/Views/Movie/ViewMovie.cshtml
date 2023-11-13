@@ -27,3 +27,12 @@
 <div style="display: block">
     <a href="/Movie/UpdateMovie/@Model.MovieID">Update this Movie</a>
 </div>
+
+<div style="display: block">
+
+    @using (Html.BeginForm("DeleteMovie", "Movie", "Post"))
+    {
+        <input type="hidden" asp-for="MovieID" value="@Model.MovieID" />
+        <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this movie" />
+    }
+</div>
