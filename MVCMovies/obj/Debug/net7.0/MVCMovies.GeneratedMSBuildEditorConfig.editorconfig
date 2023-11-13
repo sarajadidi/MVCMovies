@@ -16,12 +16,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/saralewis/Desktop/repos/MVCMovies/MVCMovies
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/saralewis/Desktop/repos/MVCMovies/MVCMovies/Views/Home/Generator.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9HZW5lcmF0b3IuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/saralewis/Desktop/repos/MVCMovies/MVCMovies/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/saralewis/Desktop/repos/MVCMovies/MVCMovies/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/saralewis/Desktop/repos/MVCMovies/MVCMovies/Views/Movie/AddMovie.cshtml]
