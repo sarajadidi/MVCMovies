@@ -7,7 +7,7 @@
     Please choose what is most important to you when watching a movie. Is it the Genre, the Rotten Tomatoes Rating, or maybe the year it was made?
 </p>
 
-<form method="get" action="@Url.Action("GenerateRandomMovie", "Movie")">
+<form class="form" method="get" action="@Url.Action("GenerateRandomMovie", "Movie")">
     <label for="genre">Select Genre:</label>
     <select id="genre" name="genre">
         <option value="Action">Action</option>
@@ -24,19 +24,20 @@
         <option value="Adventure">Adventure</option>
         <option value="Crime">Crime</option>
     </select>
-    <button type="submit">Generate Random Movie</button>
+    <br/>
+    <button class="gen-button" type="submit">Generate Random Movie</button>
 </form>
 
 
 
-<h2>Random Movie</h2>
+
 
 @*<div>
-    <h4>Name: @Model.Name</h4>
-    <p>Lead Actor: @Model.LeadActor</p>
-    <p>Genre: @Model.Genre</p>
-    <p>Year: @Model.Year</p>
-    <p>Rating: @Model.Rating</p>
-    <p>Rotten Tomatoes Rating: @Model.RottenRating</p>
-    <p>Description: @Model.Description</p>
-</div>*@
+        <h4>Name: @Model.Name</h4>
+        <p>Lead Actor: @Model.LeadActor</p>
+        <p>Genre: @Model.Genre</p>
+        <p>Year: @Model.Year</p>
+        <p>Rating: @Model.Rating</p>
+        <p>Rotten Tomatoes Rating: @Model.RottenRating</p>
+        <p>Description: @Model.Description</p>
+    </div>*@
