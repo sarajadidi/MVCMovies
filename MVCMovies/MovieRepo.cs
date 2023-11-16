@@ -14,6 +14,21 @@ namespace MVCMovies
 			_conn = conn;
 		}
 
+        public Movie GetRandomMovie(string genre)
+        {
+            // Get a random movie from the specified genre
+            var randomMovie = _conn.QueryFirstOrDefault<Movie>(
+                "SELECT TOP 1 * FROM MOVIE WHERE Genre = @genre ORDER BY NEWID()",
+                new { genre });
+
+            if (randomMovie == null)
+            {
+                throw new InvalidOperationException($"No movies found for the genre: {genre}");
+            }
+
+            return randomMovie;
+        }
+
         public IEnumerable<Movie> GetAllMovies()
         {
 			return _conn.Query<Movie>("SELECT * From MOVIE");

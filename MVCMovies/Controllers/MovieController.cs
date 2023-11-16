@@ -18,6 +18,38 @@ namespace MVCMovies.Controllers
             _repo = repo;
         }
 
+        public IActionResult GenerateRandomMovie(string genre)
+        {
+            if (string.IsNullOrEmpty(genre))
+            {
+                // Handle the case where no genre is selected
+                return BadRequest("Please select a genre.");
+            }
+
+            try
+            {
+                var moviesInGenre = _repo.GetAllMovies().Where(m => m.Genre == genre).ToList();
+
+                if (moviesInGenre.Count == 0)
+                {
+                    // Handle the case where no movie is found for the selected genre
+                    return NotFound($"No movies found for the genre: {genre}");
+                }
+
+                var random = new Random();
+                var randomMovie = moviesInGenre.OrderBy(m => random.Next()).FirstOrDefault();
+
+                return View(randomMovie);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception or handle it appropriately
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
+        }
+
+
+
         // GET: /<controller>/
         public IActionResult Index()
         {

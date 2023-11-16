@@ -11,6 +11,7 @@ namespace MVCMovies
 
         public void AddMovie(Movie movieToAdd);
         public void RemoveMovie(Movie movieToRemove);
+        public Movie GetRandomMovie(string genre);
     }
 }
 
