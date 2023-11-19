@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/saralewis/Desktop/repos/MVCMovies/MVCMovies/wwwroot/hp1.jpeg",
+      "PackagePath": "staticwebassets/hp1.jpeg"
+    },
+    {
       "Id": "/Users/saralewis/Desktop/repos/MVCMovies/MVCMovies/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

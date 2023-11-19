@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "psvQfhA2UevdULfy4UNVsMPywJGIksKl/WyaEn2lXF0=",
+  "Hash": "01VnRlm7ewqQ2ldsnEo7Aibx8Tf1l4nsKV/uatnRBeU=",
   "Source": "MVCMovies",
   "BasePath": "_content/MVCMovies",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/saralewis/Desktop/repos/MVCMovies/MVCMovies/wwwroot/hp1.jpeg",
+      "SourceId": "MVCMovies",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/saralewis/Desktop/repos/MVCMovies/MVCMovies/wwwroot/",
+      "BasePath": "_content/MVCMovies",
+      "RelativePath": "hp1.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/hp1.jpeg"
     },
     {
       "Identity": "/Users/saralewis/Desktop/repos/MVCMovies/MVCMovies/wwwroot/js/site.js",

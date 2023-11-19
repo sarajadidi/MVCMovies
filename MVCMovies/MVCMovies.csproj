@@ -14,8 +14,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\Movie\" />
+    <None Remove="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Movie\" />
+    <Folder Include="Images\" />
   </ItemGroup>
 </Project>
