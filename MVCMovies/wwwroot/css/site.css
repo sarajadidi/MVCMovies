@@ -27,7 +27,6 @@ body {
 
 .gen-title {
     text-align: center;
-    background-color: antiquewhite;
 }
 .form {
     text-align: center;
@@ -39,7 +38,7 @@ body {
 }
 
 .gen-button {
-    background-color: #04AA6D; /* Green */
+    background-color: lightgray; 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -47,4 +46,26 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    color: black;
+    font-weight: bold;
+    
+}
+
+#genre{
+    
+}
+
+.home{
+    text-align: center;
+    background-color: aliceblue;
+}
+html, body {
+    background-color: aliceblue; /* Use the color you want */
+    margin: 0; /* Remove default margin to fill the entire viewport */
+    padding: 0; /* Remove default padding to fill the entire viewport */
+}
+
+.random-movie{
+    background-color: aliceblue;
+
 }
