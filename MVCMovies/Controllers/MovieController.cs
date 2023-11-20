@@ -28,9 +28,56 @@ namespace MVCMovies.Controllers
 
             try
             {
-                var moviesInGenre = _repo.GetAllMovies().Where(m => m.Genre == genre).ToList();
+                IEnumerable<Movie> moviesInGenre;
 
-                if (moviesInGenre.Count == 0)
+                switch (genre.ToLower())
+                {
+                    case "drama":
+                        moviesInGenre = _repo.GetAllMovies().Where(m => m.Genre.Contains("Drama")).ToList();
+                        break;
+
+                    case "action":
+                        moviesInGenre = _repo.GetAllMovies().Where(m => m.Genre.Contains("Action")).ToList();
+                        break;
+                    case "fantasy":
+                        moviesInGenre = _repo.GetAllMovies().Where(m => m.Genre.Contains("Fantasy")).ToList();
+                        break;
+                    case "science fiction":
+                        moviesInGenre = _repo.GetAllMovies().Where(m => m.Genre.Contains("Science Fiction")).ToList();
+                        break;
+                    case "musical":
+                        moviesInGenre = _repo.GetAllMovies().Where(m => m.Genre.Contains("Musical")).ToList();
+                        break;
+                    case "thriller":
+                        moviesInGenre = _repo.GetAllMovies().Where(m => m.Genre.Contains("Thriller")).ToList();
+                        break;
+                    case "war":
+                        moviesInGenre = _repo.GetAllMovies().Where(m => m.Genre.Contains("War")).ToList();
+                        break;
+                    case "comedy":
+                        moviesInGenre = _repo.GetAllMovies().Where(m => m.Genre.Contains("Comedy")).ToList();
+                        break;
+                    case "romance":
+                        moviesInGenre = _repo.GetAllMovies().Where(m => m.Genre.Contains("Romance")).ToList();
+                        break;
+                    case "superhero":
+                        moviesInGenre = _repo.GetAllMovies().Where(m => m.Genre.Contains("Superhero")).ToList();
+                        break;
+                    case "animation":
+                        moviesInGenre = _repo.GetAllMovies().Where(m => m.Genre.Contains("Animation")).ToList();
+                        break;
+                    case "adventure":
+                        moviesInGenre = _repo.GetAllMovies().Where(m => m.Genre.Contains("Adventure")).ToList();
+                        break;
+                    case "crime":
+                        moviesInGenre = _repo.GetAllMovies().Where(m => m.Genre.Contains("Crime")).ToList();
+                        break;
+
+                    default:
+                        return BadRequest($"Unsupported genre: {genre}");
+                }
+
+                if (moviesInGenre.Count() == 0)
                 {
                     // Handle the case where no movie is found for the selected genre
                     return NotFound($"No movies found for the genre: {genre}");
