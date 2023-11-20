@@ -5,6 +5,34 @@
       "PackagePath": "staticwebassets/MVCMovies.bundle.scp.css"
     },
     {
+      "Id": "/Users/saralewis/Desktop/repos/MVCMovies/MVCMovies/wwwroot/Images/Unclebuck.jpg",
+      "PackagePath": "staticwebassets/Images/Unclebuck.jpg"
+    },
+    {
+      "Id": "/Users/saralewis/Desktop/repos/MVCMovies/MVCMovies/wwwroot/Images/breakfastclub.jpg",
+      "PackagePath": "staticwebassets/Images/breakfastclub.jpg"
+    },
+    {
+      "Id": "/Users/saralewis/Desktop/repos/MVCMovies/MVCMovies/wwwroot/Images/inception.jpg",
+      "PackagePath": "staticwebassets/Images/inception.jpg"
+    },
+    {
+      "Id": "/Users/saralewis/Desktop/repos/MVCMovies/MVCMovies/wwwroot/Images/madmax.jpg",
+      "PackagePath": "staticwebassets/Images/madmax.jpg"
+    },
+    {
+      "Id": "/Users/saralewis/Desktop/repos/MVCMovies/MVCMovies/wwwroot/Images/starwars.jpg",
+      "PackagePath": "staticwebassets/Images/starwars.jpg"
+    },
+    {
+      "Id": "/Users/saralewis/Desktop/repos/MVCMovies/MVCMovies/wwwroot/Images/thegodfather.jpeg",
+      "PackagePath": "staticwebassets/Images/thegodfather.jpeg"
+    },
+    {
+      "Id": "/Users/saralewis/Desktop/repos/MVCMovies/MVCMovies/wwwroot/Images/topgunmaverick.webp",
+      "PackagePath": "staticwebassets/Images/topgunmaverick.webp"
+    },
+    {
       "Id": "/Users/saralewis/Desktop/repos/MVCMovies/MVCMovies/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

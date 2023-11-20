@@ -1,38 +1,42 @@
 ﻿@model Movie
 
-<h3>@Model.Name Information</h3>
+<body class="movie-display">
+    <h3>@Model.Name Information</h3>
 
-<table class="table">
-    <tr>
-        <th>Movie ID</th>
-        <th>Name</th>
-        <th>Lead Actor</th>
-        <th>Genre</th>
-        <th>Year</th>
-        <th>Rating</th>
-        <th>Rotten Tomatoes Rating</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td>@Model.MovieID</td>
-        <td>@Model.Name</td>
-        <td>@Model.LeadActor</td>
-        <td>@Model.Genre</td>
-        <td>@Model.Year</td>
-        <td>@Model.Rating</td>
-        <td>@Model.RottenRating</td>
-        <td>@Model.Description</td>
-    </tr>
-</table>
-<div style="display: block">
-    <a href="/Movie/UpdateMovie/@Model.MovieID">Update this Movie</a>
-</div>
+    <table class="table">
+        <tr>
+            <th>Movie ID</th>
+            <th>Name</th>
+            <th>Lead Actor</th>
+            <th>Genre</th>
+            <th>Year</th>
+            <th>Rating</th>
+            <th>Rotten Tomatoes Rating</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>@Model.MovieID</td>
+            <td>@Model.Name</td>
+            <td>@Model.LeadActor</td>
+            <td>@Model.Genre</td>
+            <td>@Model.Year</td>
+            <td>@Model.Rating</td>
+            <td>@Model.RottenRating</td>
+            <td>@Model.Description</td>
+        </tr>
+    </table>
+    <div class="update-link"style="display: block">
+        <a href="/Movie/UpdateMovie/@Model.MovieID">Update this Movie</a>
+    </div>
 
-<div style="display: block">
+    <div style="display: block">
 
-    @using (Html.BeginForm("DeleteMovie", "Movie", "Post"))
-    {
-        <input type="hidden" asp-for="MovieID" value="@Model.MovieID" />
-        <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this movie" />
-    }
-</div>
+        @using (Html.BeginForm("DeleteMovie", "Movie", "Post"))
+        {
+            <input type="hidden" asp-for="MovieID" value="@Model.MovieID" />
+            <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this movie" />
+        }
+    </div>
+
+</body>
+

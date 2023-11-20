@@ -1,31 +1,35 @@
 ﻿@model Movie
 
-<h2>Create a New Movie</h2>
+<body class="create-body">
+    <h2>Create a New Movie</h2>
 
-@using (Html.BeginForm("AddMovieToDatabase", "Movie", "Post"))
-{
-    <input asp-for="MovieID" type="hidden" value="" />
+    @using (Html.BeginForm("AddMovieToDatabase", "Movie", "Post"))
+    {
+        <input asp-for="MovieID" type="hidden" value="" />
 
-    <label asp-for="Name" class="control-label">Name</label>
-    <input type="text" name="Name" class="form-control" value="" />
+        <label asp-for="Name" class="control-label">Name</label>
+        <input type="text" name="Name" class="form-control" value="" />
 
-    <label asp-for="LeadActor" class="control-label">Lead Actor</label>
-    <input type="text" name="LeadActor" class="form-control" value="" />
+        <label asp-for="LeadActor" class="control-label">Lead Actor</label>
+        <input type="text" name="LeadActor" class="form-control" value="" />
 
-    <label asp-for="Genre" class="control-label">Genre</label>
-    <input type="text" name="Genre" class="form-control" value="" />
+        <label asp-for="Genre" class="control-label">Genre</label>
+        <input type="text" name="Genre" class="form-control" value="" />
 
-    <label asp-for="Year" class="control-label">Year</label>
-    <input type="number" step="0.00" name="Year" class="form-control" value="" />
+        <label asp-for="Year" class="control-label">Year</label>
+        <input type="number" step="0.00" name="Year" class="form-control" value="" />
 
-    <label asp-for="Rating" class="control-label">Rating</label>
-    <input type="text" name="Rating" class="form-control" value="" />
+        <label asp-for="Rating" class="control-label">Rating</label>
+        <input type="text" name="Rating" class="form-control" value="" />
 
-    <label asp-for="RottenRating" class="control-label">Rotten Tomatoes Rating</label>
-    <input type="number" step="0.00" class="form-control" value="" />
+        <label asp-for="RottenRating" class="control-label">Rotten Tomatoes Rating</label>
+        <input type="number" step="0.00" class="form-control" value="" />
 
-    <label asp-for="Description" class="control-label">Description</label>
-    <input type="text" name="Description" class="form-control" value="" />
+        <label asp-for="Description" class="control-label">Description</label>
+        <input type="text" name="Description" class="form-control" value="" />
 
-    <input type="submit" value="Create Movie" class="btn btn-primary" />
-}
+        <input type="submit" value="Create Movie" class="btn btn-primary" />
+    }
+
+</body>
+

@@ -1,15 +1,18 @@
 ﻿html {
-  font-size: 14px;
+    font-size: 14px;
+    font-family: monospace;
 }
 
 @media (min-width: 768px) {
   html {
     font-size: 16px;
+    font-family: monospace;
   }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    font-family: monospace;
 }
 
 html {
@@ -27,6 +30,8 @@ body {
 
 .gen-title {
     text-align: center;
+    font-weight: bold;
+    font-size: 45px;
 }
 .form {
     text-align: center;
@@ -38,7 +43,8 @@ body {
 }
 
 .gen-button {
-    background-color: lightgray; 
+    background-color: lightgray;
+    border-radius: 40px;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -52,12 +58,13 @@ body {
 }
 
 #genre{
-    
+    font-size: 20px;
 }
 
-.home{
+.home {
     text-align: center;
     background-color: aliceblue;
+    font-family: monospace;
 }
 html, body {
     background-color: aliceblue; /* Use the color you want */
@@ -72,4 +79,42 @@ html, body {
 
 .caption{
     
+}
+.col-md-4{
+    text-decoration: none;
+}
+
+.thumbnail {
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.form {
+    padding: 50px;
+    font-size: 20px;
+}
+
+.gen-body {
+    font-family: monospace;
+}
+.movie-display {
+    font-family: monospace;
+}
+.table {
+    font-family: monospace;
+}
+.create-body {
+    font-family: monospace;
+}
+.random-movie{
+    font-family: monospace;
+}
+.index-body {
+    font-family: monospace;
+}
+.create-link{
+    text-decoration: none;
+}
+.update-link {
+    text-decoration: none;
 }

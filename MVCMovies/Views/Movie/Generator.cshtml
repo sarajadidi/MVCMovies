@@ -1,32 +1,40 @@
 ﻿@model Movie
-
-<h1 class="gen-title">Movie Generator</h1>
-
-<p class="generator-text">
-    Everyone has that one friend(or more than one) who likes to be picky with what movie the group picks to watch.
-    Please choose a genre and let the Generator do the work.
-</p>
-
-<form class="form" method="get" action="@Url.Action("GenerateRandomMovie", "Movie")">
-    <label for="genre">Select Genre:</label>
-    <select id="genre" name="genre">
-        <option value="action">Action</option>
-        <option value="comedy">Comedy</option>
-        <option value="drama">Drama</option>
-        <option value="war">War</option>
-        <option value="thriller">Thriller</option>
-        <option value="science fiction">Science Fiction</option>
-        <option value="fantasy">Fantasy</option>
-        <option value="musical">Musical</option>
-        <option value="romance">Romance</option>
-        <option value="superhero">Superhero</option>
-        <option value="animation">Animation</option>
-        <option value="adventure">Adventure</option>
-        <option value="crime">Crime</option>
-    </select>
+<body class="gen-body">
     <br/>
-    <button class="gen-button" type="submit">Generate Random Movie</button>
-</form>
+    <h1 class="gen-title">Movie Generator</h1>
+    <br />
+    <br />
+
+    <h4 class="generator-text">
+        Everyone has that one friend(or more than one) who likes to be picky with what movie the group picks to watch.
+        Please choose a genre and let the Generator do the work.
+    </h4>
+    <br />
+
+    <form class="form" method="get" action="@Url.Action("GenerateRandomMovie", "Movie")">
+        <label for="genre">Select Genre:</label>
+        <select id="genre" name="genre">
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="war">War</option>
+            <option value="thriller">Thriller</option>
+            <option value="science fiction">Science Fiction</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="musical">Musical</option>
+            <option value="romance">Romance</option>
+            <option value="superhero">Superhero</option>
+            <option value="animation">Animation</option>
+            <option value="adventure">Adventure</option>
+            <option value="crime">Crime</option>
+        </select>
+        <br />
+        <br />
+        <button class="gen-button" type="submit">Generate Random Movie</button>
+    </form>
+</body>
+
+
 
 
 
