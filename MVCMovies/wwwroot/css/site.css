@@ -20,7 +20,7 @@ html {
   min-height: 100%;
 }
 
-body {
+.body {
   margin-bottom: 60px;
 }
 
@@ -122,3 +122,7 @@ html, body {
     text-decoration: none;
     color: black;
 }*/
+
+.table{
+    padding: 20px;
+}
